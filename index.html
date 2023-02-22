@@ -16,7 +16,7 @@
     />
 
     <!--===== SWIPER CSS ======-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
     <!--===== FONTS ======-->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
@@ -185,7 +185,7 @@
         </div>
 
         <!--===== About sacar despues ======-->
-        <section class="about section">
+        <section class="about section" id="about">
           <div class="container">
             <div class="about__container">
               <div class="col-12">
@@ -247,170 +247,22 @@
           <div class="work__container row">
             <div class="col-12">
               <h2 data-heading="Mi portafolio" class="section__title">
-                Trabajo reciente
+                Proyectos
               </h2>
             </div>
-
-            <div class="work__filters col-12">
-              <span class="work__item active-work" data-filter="all">
-                Todos</span
-              >
-              <span class="work__item" data-filter=".web">Mockups</span>
-              <span class="work__item" data-filter=".app">Logo</span>
-              <span class="work__item" data-filter=".design">Diseño</span>
+            <!-- Tarjeta de trabajos  -->
+            <div class="work__cards">
+              <!-- Aquí se mostrarán las tarjetas de proyectos -->
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4 card-work mix web">
-              <div class="work__card">
-                <img src="img/portafolio-1.jpg" alt="..." class="work__img" />
-                <h3 class="work__title">Mockup Publicitario</h3>
-                <span class="work__button"
-                  >Ver
-                  <i class="uil uil-arrow-right work__button-icon"></i>
-                </span>
-                <div class="portfolio__item-details">
-                  <h3 class="details__title">Los servicios brindan diseño</h3>
-                  <p class="details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod tenetur adipisci ad.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 card-work mix web">
-              <div class="work__card">
-                <img src="img/portafolio-2.png" alt="..." class="work__img" />
-                <h3 class="work__title">Pieza Grafica</h3>
-                <span class="work__button"
-                  >Ver
-                  <i class="uil uil-arrow-right work__button-icon"></i>
-                </span>
-                <div class="portfolio__item-details">
-                  <h3 class="details__title">
-                    Mobile app landing design & app maintain
-                  </h3>
-                  <p class="details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod tenetur adipisci ad.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 card-work mix app">
-              <div class="work__card">
-                <img src="img/logo-keisy.jpg" alt="..." class="work__img" />
-                <h3 class="work__title">Logo</h3>
-                <span class="work__button"
-                  >Ver
-                  <i class="uil uil-arrow-right work__button-icon"></i>
-                </span>
-                <div class="portfolio__item-details">
-                  <h3 class="details__title">
-                    Logo design creativity & Application
-                  </h3>
-                  <p class="details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod tenetur adipisci ad.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 card-work mix app">
-              <div class="work__card">
-                <img src="img/portafolio-3.jpg" alt="..." class="work__img" />
-                <h3 class="work__title">App Design</h3>
-                <span class="work__button"
-                  >Ver
-                  <i class="uil uil-arrow-right work__button-icon"></i>
-                </span>
-                <div class="portfolio__item-details">
-                  <h3 class="details__title">
-                    Mobile app landing design & app maintain
-                  </h3>
-                  <p class="details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod tenetur adipisci ad.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 card-work mix web">
-              <div class="work__card">
-                <img src="img/portafolio-4.jpg" alt="..." class="work__img" />
-                <h3 class="work__title">Brand Design</h3>
-                <span class="work__button"
-                  >Ver
-                  <i class="uil uil-arrow-right work__button-icon"></i>
-                </span>
-                <div class="portfolio__item-details">
-                  <h3 class="details__title">
-                    Logo design creativity & Application
-                  </h3>
-                  <p class="details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod tenetur adipisci ad.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 card-work mix design">
-              <div class="work__card">
-                <img src="img/portafolio-5.png" alt="..." class="work__img" />
-                <h3 class="work__title">Web Design</h3>
-                <span class="work__button"
-                  >Ver
-                  <i class="uil uil-arrow-right work__button-icon"></i>
-                </span>
-                <div class="portfolio__item-details">
-                  <h3 class="details__title">App for tecnology & services</h3>
-                  <p class="details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod tenetur adipisci ad.
-                  </p>
-                </div>
-              </div>
+            <div class="work-overlay"></div>
+            <div class="button-content">
+              <button id="load-more-btn" class="button">
+                Cargar más proyectos
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <!--===== Portfolio Popup ======-->
-      <div class="portfolio__popup">
-        <div class="portfolio__popup-inner">
-          <div class="potfolio__popup-content row">
-            <span class="portfolio__popup-close"
-              ><i class="uil uil-times"></i
-            ></span>
-            <div class="pp__thumbnail col-12 col-md-7">
-              <img src="img/work-2.jpg" alt="" class="portfolio__popup-img" />
-            </div>
-            <div class="portfolio__popup-info col-12 col-md-5">
-              <div class="portfolio__popup-subtitle">
-                Presentado - <span>Design</span>
-              </div>
-              <div class="portfolio__popup-body">
-                <h3 class="details__title">App for tecnology & services</h3>
-                <p class="details__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                  tenetur adipisci ad.
-                </p>
-                <ul class="details__info">
-                  <li>Created - <span>4 dec 2020</span></li>
-                  <li>Technologies - <span>html css</span></li>
-                  <li>Role - <span>frontend</span></li>
-                  <li>
-                    View - <span><a href="#">www.domain.com</a></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!--===== Contact ======-->
       <section class="contact" id="contact">
@@ -562,11 +414,11 @@
     <!--===== SCROLL UP ======-->
 
     <!--===== MIXITUP FILTER ======-->
-    <script src="js/mixitup.min.js"></script>
+    <!-- <script src="js/mixitup.min.js"></script> -->
     <!--===== SWIPER JS ======-->
-    <script src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
     <!--===== MAIN jS ======-->
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <!-- Iconos -->
     <script
       type="module"
