@@ -55,7 +55,7 @@ function renderProyectos() {
     const card = document.createElement("div");
     card.className = "work__card";
     card.innerHTML = `
-    <img src="${proyecto.img}" alt="${proyecto.title}" class="work__img">
+    <img  src="${proyecto.img}" alt="${proyecto.title}" class="work__img" loading="lazy">
     <h3 class="work__title">${proyecto.title}</h3>
     `;
 
@@ -68,7 +68,7 @@ function renderProyectos() {
         /*html*/
         `<img class="work__img--overlay" src="${workImg[i].getAttribute(
           "src"
-        )}"  />
+        )}"  loading="lazy"/>
       <button class="work-btn-close"><i class="fa-solid fa-xmark"></i></button>
       `;
       workOverlay.classList.add("work-overlay--active");
